@@ -31,24 +31,27 @@ crearCuentaBtn.onclick = function () {
     borrarDatos();
 };
 
-
-/*Logica de validacion*/
+/*Validacion*/
 iniciarSesionBtn.addEventListener('click', function () {
-        let enterEmail = document.getElementById('email').value;
-        let enterPwd = document.getElementById('pwd').value;
+    let enterEmail = document.getElementById('email').value;
+    let enterPwd = document.getElementById('pwd').value;
 
-        let getEmail = localStorage.getItem('userEmail');
-        let getPwd = localStorage.getItem('userPwd');
+    let getEmail = localStorage.getItem('userEmail');
+    let getPwd = localStorage.getItem('userPwd');
 
-
-        if (enterEmail === getEmail && enterPwd === getPwd) {
-            Swal.fire("SweetAlert2 is working!");
+    if (enterEmail === getEmail && enterPwd === getPwd) {
+        Swal.fire({
+            title: "Bienvenido!",
+            timer: 3000,
+            showConfirmButton: false
+        });
+        setTimeout(function () {
             window.location.href = '../index.html';
-        } else {
-            alert('Datos incorrectos')
-            borrarDatos();
-        }
-
+        }, 3000);
+    } else {
+        alert('Datos incorrectos')
+        borrarDatos();
+    }
 });
 
 function borrarDatos() {

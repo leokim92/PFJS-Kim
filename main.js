@@ -9,6 +9,7 @@ class Auto {
 }
 
 const carSedan = document.getElementById('carros');
+
 let cars = [];
 
 let loadCars = async () => {
