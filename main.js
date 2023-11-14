@@ -69,7 +69,7 @@ let loadCars = async () => {
                                 </div>
                             </div>
                             <div class="dinero">
-                                <p>$${rentedDays}</p>
+                                <p>${rentedDays}</p>
                                 <p>$${totalAuto}</p>
                                 <div class="seg-iva-total">
                                     <p>$${seguro}</p>
