@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crea tu cuenta</title>
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="../style/style.css">
+
+    <!-- BI -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <!-- Header / Navbar -->
+    <header>
+        <a href="#" class="logo"><img src="../Imagenes/Logo.png" alt="rental car mexsal logo"></a>
+
+        <ul class="navbar">
+            <li><a href="../index.html">Home</a></li>
+        </ul>
+    </header>
+
+    <!-- Log in Form -->
+    <img class="login-background" src="../Imagenes/login foto 4.jpg" alt="inside car">
+
+    <div class="LogContainer">
+        <h1 id="titulo">Crea tu cuenta</h1>
+        <form class="FormComplete">
+            <div class="input-group">
+                <div class="input-field" id="nombreField">
+                    <i class='bx bxs-user'></i>
+                    <input id="nombre" class="LoginBox" type="text" placeholder="Nombre">
+                </div>
+
+                <div class="input-field">
+                    <i class='bx bxs-envelope'></i>
+                    <input id="email" class="LoginBox" type="email" placeholder="Email">
+                </div>
+
+                <div class="input-field">
+                    <i class='bx bxs-lock-alt'></i>
+                    <input id="pwd" class="LoginBox" type="password" placeholder="Contraseña">
+                </div>
+                <p>Recupera Contraseña <a href="#">Click Aqui!</a></p>
+            </div>
+            <div class="btn-field">
+                <button type="button" id="crearCuentaBtn">Crear cuenta</button>
+                <button type="button" id="iniciarSesionBtn" class="desabilitado">Iniciar sesion</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- My JS -->
+    <script src="./create-account.js"></script>
+    <!-- BI -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <!-- SA -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
